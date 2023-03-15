@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+
+:root {
+  --main-color: #6327fe;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #eae8fe;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.cola {
+  position: relative;
+  background-color: #fff;
+  width: 110px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin: 5px;
+  transition: transform 0.2s;
+
+  overflow: hidden;
+}
+
+.cola img {
+  margin-bottom: 5px;
+}
+
+.cola p {
+  font-size: 9px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.cola .price {
+  width: 70px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.cola .sold-out-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.cola .sold-out {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  color: #eae8fe;
+  border: 6px double #eae8fe;
+  width: 30px;
+  padding: 0 8px 2px 8px;
+  font-weight: bold;
+}
+
+[class^="sold"] {
+  display: none;
+}
+
+.cola:hover {
+  outline: 3px solid var(--main-color);
+}
+
+.cola:active {
+  transform: scale(0.95);
+}
+
+.cola:disabled {
+  color: #000;
+  cursor: default;
+  outline: none;
+  transform: none;
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.cola:disabled [class^="sold"] {
+  display: block;
+}
