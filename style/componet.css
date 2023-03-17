@@ -34,12 +34,19 @@ button {
   padding: 0;
   cursor: pointer;
   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
-  width: 100px;
+  width: 94px;
   background-color: #fff;
+  border: 1px solid #ccc;
+  transition: transform 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
 }
 
 button,
-div,
+.price-box,
+.drink-list,
 input {
   border-radius: 8px;
 }
@@ -54,11 +61,14 @@ p {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #eee;
+
   box-sizing: border-box;
-  margin: 5px;
-  transition: transform 0.2s;
+  margin: 0 12px 12px 0;
   overflow: hidden;
+}
+
+.cola:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .cola img {
@@ -112,10 +122,6 @@ p {
   outline: 3px solid var(--main-color);
 }
 
-.cola:active {
-  transform: scale(0.95);
-}
-
 .cola:disabled {
   color: #000;
   cursor: default;
@@ -131,18 +137,19 @@ p {
 /* 소지금, 잔액 표시 */
 .price-box {
   padding: 10px;
-  margin: 10px;
   display: flex;
   justify-content: space-between;
   background-color: var(--sub-color);
+  box-sizing: border-box;
 }
 
 .left-over {
-  width: 200px;
+  max-width: 204px;
 }
 
 .having {
   width: 306px;
+  margin: 9px auto;
 }
 
 .having p:nth-child(2) {
@@ -151,10 +158,11 @@ p {
 
 /* 음료 리스트 */
 .drink-list {
-  margin: 10px;
   width: 276px;
+  margin-bottom: 6px;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .drink-list p {
@@ -173,6 +181,7 @@ p {
   margin: 8px;
   font-size: 14px;
   font-weight: 500;
+  border-radius: 5px;
 }
 
 /* 음료 리스트에 들어가는 콜라 이미지 */
@@ -214,7 +223,8 @@ p {
 [class^="btn-"] {
   font-size: 13px;
   font-weight: 500;
-  border: none;
+  box-sizing: border-box;
+  margin-left: 4px;
 }
 
 .btn-changes,
@@ -223,6 +233,13 @@ p {
   justify-content: center;
   align-items: center;
   height: 33px;
+  transition: color, background-color .2s;
+}
+
+.btn-changes:hover,
+.btn-deposit:hover {
+  background-color: var(--main-color);
+  color: #fff;
 }
 
 .btn-get {
@@ -230,12 +247,19 @@ p {
   justify-content: center;
   align-items: center;
   height: 106px;
+  border: none;
   color: #fff;
   background-color: var(--main-color);
+  transition: filter .2s;
+}
+
+.btn-get:hover {
+  filter: invert(100%);
 }
 
 #deposit {
-  width: 200px;
+  box-sizing: border-box;
+  width: 204px;
   height: 33px;
   padding-left: 8px;
   border: 2px solid var(--border-color);

@@ -1,5 +1,9 @@
+:root {
+  --theme-color: #eae8fe;
+}
+
 body {
-  background-color: #eae8fe;
+  background-color: var(--theme-color);
 }
 
 .a11y-hidden {
@@ -17,34 +21,45 @@ body {
   text-align: center;
 }
 
-
-h1 {
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
 
+/* layout */
 .header-wrap {
   display: flex;
   justify-content: center;
 }
 
-.container {
+.l_container {
   margin: 44px auto;
-  width: 800px;
-
+  width: 748px;
   display: flex;
   gap: 28px;
 }
 
 .vending-machine,
-.pocket,
+.wallet,
 .vending-result {
   background-color: #fff;
 }
 
 .vending-machine {
   flex-basis: 360px;
-  flex-shrink: 0;
+  min-width: 360px;
+}
+
+.main-container {
+  padding-top: 31px;
+  padding-left: 23px;
+}
+
+.control {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 .sub-container {
@@ -55,5 +70,52 @@ h1 {
   flex-shrink: 0;
 }
 
-.container div {
+.drink-list-container {
+  background-color: var(--theme-color);
+  padding: 12px 18px 0 12px;
+  position: relative;
+  border: 2px solid #cdcdcd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.drink-list-container.result {
+  height: 364px;
+}
+
+.drink-list-container.pick {
+  height: 106px;
+  overflow-y: hidden;
+}
+
+.drink-list-container::after {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  right: 4px;
+  width: 4px;
+  height: 79px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.vending-result {
+  display: flex;
+  flex-direction: column;
+  padding: 41px 27px 26px 27px;
+  gap: 11px;
+}
+
+.vending-result h2 {
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.sum-result {
+  margin-left: auto;
+}
+
+.sum-result p {
+  font-size: 12px;
+  font-weight: 500;
 }
