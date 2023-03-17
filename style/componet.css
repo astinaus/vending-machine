@@ -186,7 +186,7 @@ p {
 
 /* 음료 리스트에 들어가는 콜라 이미지 */
 .list-original {
-  background: #fff url(./img/cola-red.svg) no-repeat 10px / 22px;
+  background: #fff url(../img/cola-red.svg) no-repeat 10px / 22px;
 }
 
 .list-violet {
