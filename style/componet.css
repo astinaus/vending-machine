@@ -190,23 +190,23 @@ p {
 }
 
 .list-violet {
-  background: #fff url(./img/cola-violet.svg) no-repeat 10px / 22px;
+  background: #fff url(../img/cola-violet.svg) no-repeat 10px / 22px;
 }
 
 .list-orange {
-  background: #fff url(./img/cola-orange.svg) no-repeat 10px / 22px;
+  background: #fff url(../img/cola-orange.svg) no-repeat 10px / 22px;
 }
 
 .list-green {
-  background: #fff url(./img/cola-green.svg) no-repeat 10px / 22px;
+  background: #fff url(../img/cola-green.svg) no-repeat 10px / 22px;
 }
 
 .list-cool {
-  background: #fff url(./img/cola-cool.svg) no-repeat 10px / 22px;
+  background: #fff url(../img/cola-cool.svg) no-repeat 10px / 22px;
 }
 
 .list-yellow {
-  background: #fff url(./img/cola-yellow.svg) no-repeat 10px / 22px;
+  background: #fff url(../img/cola-yellow.svg) no-repeat 10px / 22px;
 }
 
 /* 선택한 음료, 획득한 음료 창 길이 */
