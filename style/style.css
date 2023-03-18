@@ -217,6 +217,17 @@ button {
   line-height: 19px;
   height: 33px;
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
 }
 
 /* 획득 button */
@@ -225,6 +236,10 @@ button {
   background-color: var(--main-color);
   color: #fff;
   font-style: bold;
+}
+
+.btn-get:hover {
+  filter: invert(100%);
 }
 
 /* 입금액 입력 */
