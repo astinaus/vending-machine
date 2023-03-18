@@ -1,0 +1,9 @@
+/* cola */
+.cola {
+  display: flex;
+  background: #fff url(../img/cola-original.svg) no-repeat 10px center / 18px
+    33px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
