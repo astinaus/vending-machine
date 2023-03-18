@@ -65,6 +65,10 @@ header {
   justify-content: center;
 }
 
+header img {
+  aspect-ratio: 2 / 1;
+}
+
 /* container */
 .container {
   display: flex;
@@ -322,4 +326,39 @@ input[type="number"]:focus {
   font-size: var(--price-font-size);
   line-height: 17px;
   align-self: flex-end;
+}
+
+/* 반응형 */
+@media (max-width: 758px) {
+  header img {
+    width: 410px;
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 0;
+  }
+
+  .right-wrapper,
+  .left-wrapper {
+    width: 360px;
+  }
+
+  .wallet {
+    margin-bottom: 0;
+  }
+}
+
+/* 모바일 디바이스 */
+@media (max-width: 390px) {
+  body {
+    background-color: #fff;
+  }
+
+  header img {
+    width: 166px;
+  }
 }
