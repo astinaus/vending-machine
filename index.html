@@ -68,8 +68,32 @@
             </label>
           </li>
         </ul>
-        <p>잔액 :</p>
-        <p>1,000원</p>
+        <div class="grid-container">
+          <div class="money-box small grid-a">
+            <p>잔액 :</p>
+            <p>1,000원</p>
+          </div>
+          <button class="grid-b">거스름돈 반환</button>
+          <input
+            class="grid-c"
+            type="number"
+            id="deposit"
+            placeholder="입금액 입력"
+          />
+          <label for="deposit"></label>
+          <button class="grid-d">입금</button>
+          <div class="cola-get small grid-e">
+            <div class="cola cart green">
+              <p class="name">Green_Cola</p>
+              <p class="count">2</p>
+            </div>
+            <div class="cola cart orange">
+              <p class="name">Orange_Cola</p>
+              <p class="count">3</p>
+            </div>
+          </div>
+          <button class="btn-get grid-f">획득</button>
+        </div>
       </section>
       <section class="right-wrapper">
         <div class="wallet">
@@ -80,16 +104,25 @@
         </div>
         <div class="cola-list">
           <h2>획득한 음료</h2>
-          <div class="cola-get">
-            <div class="cola get">
+          <div class="cola-get large">
+            <div class="cola get original">
               <p class="name">Original_Cola</p>
+              <p class="count">1</p>
+            </div>
+            <div class="cola get green">
+              <p class="name">Green_Cola</p>
               <p class="count">2</p>
             </div>
-            <div class="cola get">
-              <p class="name">Original_Cola</p>
-              <p class="count">2</p>
+            <div class="cola get orange">
+              <p class="name">Orange_Cola</p>
+              <p class="count">1</p>
+            </div>
+            <div class="cola get violet">
+              <p class="name">Violet_Cola</p>
+              <p class="count">5</p>
             </div>
           </div>
+          <p class="total">총 금액 : 9,000원</p>
         </div>
       </section>
     </div>

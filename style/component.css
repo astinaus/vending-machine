@@ -1,9 +1,89 @@
 /* cola */
 .cola {
   display: flex;
-  background: #fff url(../img/cola-original.svg) no-repeat 10px center / 18px
-    33px;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
+  height: 46px;
+  margin-bottom: 6px;
+}
+
+.cola.original {
+  background: #fff url(../img/cola-original.svg) no-repeat 10px center / 18px
+    33px;
+}
+
+.cola.violet {
+  background: #fff url(../img/cola-violet.svg) no-repeat 10px center / 18px 33px;
+}
+
+.cola.yellow {
+  background: #fff url(../img/cola-yellow.svg) no-repeat 10px center / 18px 33px;
+}
+
+.cola.cool {
+  background: #fff url(../img/cola-cool.svg) no-repeat 10px center / 18px 33px;
+}
+
+.cola.green {
+  background: #fff url(../img/cola-green.svg) no-repeat 10px center / 18px 33px;
+}
+
+.cola .name {
+  margin-left: 38px;
+}
+
+.cola .count {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  padding-top: 4px;
+  margin-right: 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.cola.orange {
+  background: #fff url(../img/cola-orange.svg) no-repeat 10px center / 18px 33px;
+}
+
+/* money-box */
+.money-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 6px 10px 6px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+}
+
+.money-box p {
+  font-size: var(--normal-font-size);
+  line-height: 20px;
+}
+
+/* 콜라 담는 박스 */
+.cola-get {
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  padding: 12px 18px 0 12px;
+  box-sizing: border-box;
+}
+
+.cola-get::after {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  right: 4px;
+  width: 4px;
+  height: 79px;
+  background-color: #fff;
+  border-radius: 50px;
 }

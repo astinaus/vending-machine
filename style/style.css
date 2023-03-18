@@ -1,7 +1,11 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
 /* root 변수 */
 :root {
   --main-color: #6327fe;
   --bg-color: #eae8fe;
+  --border-color: #bdbdbd;
   --name-font-size: 9px;
   --price-font-size: 12px;
   --btn-font-size: 13px;
@@ -9,6 +13,7 @@
 }
 
 body {
+  font-family: "Noto Sans KR", sans-serif;
   background-color: var(--bg-color);
 }
 
@@ -28,8 +33,17 @@ li {
   list-style: none;
 }
 
+img {
+  vertical-align: top;
+}
+
 input[type="checkbox"] {
   display: none;
+}
+
+button {
+  background-color: #fff;
+  border: none;
 }
 
 /* 숨김 처리용 */
@@ -72,10 +86,16 @@ header {
   height: 272px;
   justify-content: space-around;
   align-content: space-around;
+  margin: 31px 27px 0 27px;
 }
 
 .cola-box li {
   position: relative;
+  margin: 0 12px 12px 0;
+}
+
+.cola-box li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .cola-box label {
@@ -108,7 +128,6 @@ header {
 }
 
 /* hover, active, checked 아웃라인 효과 */
-
 .cola-box label:hover,
 .cola-box input:checked + label {
   outline: 3px solid var(--main-color);
@@ -140,86 +159,151 @@ header {
   background-image: url(../img/sold-out.svg);
 }
 
+/* grid */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+  place-items: center;
+  margin: 17px 27px 16px 27px;
+}
+
+.grid-a {
+  grid-area: a;
+}
+.grid-b {
+  grid-area: b;
+}
+.grid-c {
+  grid-area: c;
+}
+.grid-d {
+  grid-area: d;
+}
+.grid-e {
+  grid-area: e;
+}
+.grid-f {
+  grid-area: f;
+}
+
+.grid-a,
+.grid-c,
+.grid-e {
+  margin-right: 12px;
+}
+
+.grid-a,
+.grid-b,
+.grid-c,
+.grid-d {
+  margin-bottom: 11px;
+}
+
+/* 잔액 */
+.money-box.small {
+  width: 200px;
+}
+
+/* button */
+button {
+  font-size: var(--btn-font-size);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 94px;
+  box-sizing: border-box;
+  line-height: 19px;
+  height: 33px;
+  font-weight: 500;
+}
+
+/* 획득 button */
+.btn-get {
+  height: 106px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-style: bold;
+}
+
+/* 입금액 입력 */
+input[type="number"] {
+  width: 200px;
+  height: 33px;
+  box-sizing: border-box;
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding-left: 6px;
+  outline: none;
+  font-size: var(--btn-font-size);
+}
+
+input[type="number"]::placeholder {
+  font-size: var(--btn-font-size);
+  color: var(--border-color);
+}
+
+input[type="number"]:focus {
+  border-color: var(--main-color);
+}
+
+/* cola 담는 공간 */
+.cola-get.small {
+  width: 200px;
+  height: 106px;
+}
+
+.cola.cart {
+  width: 170px;
+}
+
 /* right */
 .right-wrapper {
   flex-basis: 360px;
 }
 
+/* 소지금 박스 */
 .wallet {
   background-color: #fff;
   margin-bottom: 20px;
   padding: 9px;
 }
 
-.money-box {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 6px 10px 6px 10px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  background-color: var(--bg-color);
-}
-
 .money-box.large {
   width: 306px;
 }
 
-.money-box p {
-  font-size: var(--normal-font-size);
-  line-height: 20px;
-}
-
+/* 획득한 음료 박스 */
 .cola-list {
   background-color: #fff;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 27px 26px 27px;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .cola-list h2 {
   font-size: var(--normal-font-size);
   line-height: 20px;
+  margin-bottom: 13px;
 }
 
-.cola-get {
+.cola-get.large {
   width: 306px;
   height: 364px;
-  border: 2px solid #bdbdbd;
-  background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  position: relative;
-  border-radius: 5px;
-  padding-top: 12px;
-}
-
-.cola-get::after {
-  content: " ";
-  position: absolute;
-  top: 9px;
-  right: 4px;
-  width: 4px;
-  height: 79px;
-  background-color: #fff;
-  border-radius: 50px;
+  margin-bottom: 6px;
 }
 
 .cola.get {
   width: 276px;
-  height: 46px;
-  margin: 0 18px 6px 12px;
 }
 
-.cola .name {
-  margin-left: 38px;
-}
-
-.cola .count {
-  border: 1px solid #bdbdbd;
-  width: 30px;
-  height: 30px;
-  line-height: 20px;
-  padding-top: 4px;
-  margin-right: 8px;
-  box-sizing: border-box;
+/* 총 금액 */
+.total {
+  font-weight: 500;
+  font-size: var(--price-font-size);
+  line-height: 17px;
+  align-self: flex-end;
 }
