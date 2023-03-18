@@ -235,7 +235,7 @@ button:active {
   height: 106px;
   background-color: var(--main-color);
   color: #fff;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .btn-get:hover {
