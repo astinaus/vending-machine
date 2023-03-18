@@ -1,134 +1,132 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>벤딩머신</title>
-    <link rel="stylesheet" href="./style/normalize.css" />
-    <link rel="stylesheet" href="./style/component.css" />
-    <link rel="stylesheet" href="./style/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html" class="logo">
-        <h1 class="a11y-hidden">벤딩머신</h1>
-        <img src="./img/logo.svg" alt="logo">
-      </a>
-    </header>
-    <div class="container">
-      <section class="left-wrapper">
-        <h2 class="a11y-hidden">콜라 종류</h2>
 
-        <ul class="cola-box">
-          <li>
-            <input type="checkbox" id="original">
-            <label for="original">
-              <img src="./img/cola-original.svg" alt="original">
-              <span class="name">Original_Cola</span>
-              <span class="price">1000원</span>
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="violet" disabled>
-            <label for="violet">
-              <img src="./img/cola-violet.svg" alt="original">
-              <span class="name">Violet_Cola</span>
-              <span class="price">1000원</span>
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="yellow">
-            <label for="yellow">
-              <img src="./img/cola-yellow.svg" alt="original">
-              <span class="name">Yellow_Cola</span>
-              <span class="price">1000원</span>
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="cool">
-            <label for="cool">
-              <img src="./img/cola-cool.svg" alt="original">
-              <span class="name">Cool_Cola</span>
-              <span class="price">1000원</span>
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="green">
-            <label for="green">
-              <img src="./img/cola-green.svg" alt="original">
-              <span class="name">Green_Cola</span>
-              <span class="price">1000원</span>
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" id="orange">
-            <label for="orange">
-              <img src="./img/cola-orange.svg" alt="original">
-              <span class="name">Orange_Cola</span>
-              <span class="price">1000원</span>
-            </label>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>벤딩머신</title>
+  <link rel="stylesheet" href="./style/normalize.css" />
+  <link rel="stylesheet" href="./style/component.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
 
-        <div class="grid-container">
-          <div class="money-box small grid-a">
-            <p>잔액 :</p>
-            <p>1,000원</p>
-          </div>
-          <button class="grid-b">거스름돈 반환</button>
-          <input
-            class="grid-c"
-            type="number"
-            id="deposit"
-            placeholder="입금액 입력"
-          />
-          <label for="deposit"></label>
-          <button class="grid-d">입금</button>
-          <div class="cola-get small grid-e">
-            <div class="cola cart green">
-              <p class="name">Green_Cola</p>
-              <p class="count">2</p>
-            </div>
-            <div class="cola cart orange">
-              <p class="name">Orange_Cola</p>
-              <p class="count">3</p>
-            </div>
-          </div>
-          <button class="btn-get grid-f">획득</button>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <h1 class="a11y-hidden">벤딩머신</h1>
+      <img src="./img/logo.svg" alt="logo">
+    </a>
+  </header>
+  <div class="container">
+    <section class="left-wrapper">
+      <h2 class="a11y-hidden">콜라 종류</h2>
+
+      <ul class="cola-box">
+        <li>
+          <input type="checkbox" id="original">
+          <label for="original">
+            <img src="./img/cola-original.svg" alt="original">
+            <span class="name">Original_Cola</span>
+            <span class="price">1000원</span>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" id="violet" disabled>
+          <label for="violet">
+            <img src="./img/cola-violet.svg" alt="original">
+            <span class="name">Violet_Cola</span>
+            <span class="price">1000원</span>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" id="yellow">
+          <label for="yellow">
+            <img src="./img/cola-yellow.svg" alt="original">
+            <span class="name">Yellow_Cola</span>
+            <span class="price">1000원</span>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" id="cool">
+          <label for="cool">
+            <img src="./img/cola-cool.svg" alt="original">
+            <span class="name">Cool_Cola</span>
+            <span class="price">1000원</span>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" id="green">
+          <label for="green">
+            <img src="./img/cola-green.svg" alt="original">
+            <span class="name">Green_Cola</span>
+            <span class="price">1000원</span>
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" id="orange">
+          <label for="orange">
+            <img src="./img/cola-orange.svg" alt="original">
+            <span class="name">Orange_Cola</span>
+            <span class="price">1000원</span>
+          </label>
+        </li>
+      </ul>
+
+      <div class="grid-container">
+        <div class="money-box small grid-a">
+          <p>잔액 :</p>
+          <p>1,000원</p>
         </div>
-      </section>
-      <section class="right-wrapper">
-        <div class="wallet">
-          <h2 class="a11y-hidden">소지금</h2>
-          <div class="money-box large">
-            <p>소지금 :</p>
-            <p><strong>25,000원</strong></p>
+        <button class="grid-b">거스름돈 반환</button>
+        <input class="grid-c" type="number" id="deposit" placeholder="입금액 입력" />
+        <label class="a11y-hidden" for="deposit">입금액 입력</label>
+        <button class="grid-d">입금</button>
+        <div class="cola-get small grid-e">
+          <div class="cola cart green">
+            <p class="name">Green_Cola</p>
+            <p class="count">2</p>
+          </div>
+          <div class="cola cart orange">
+            <p class="name">Orange_Cola</p>
+            <p class="count">3</p>
           </div>
         </div>
-        <div class="cola-list">
-          <h3>획득한 음료</h3>
-          <div class="cola-get large">
-            <div class="cola get original">
-              <p class="name">Original_Cola</p>
-              <p class="count">1</p>
-            </div>
-            <div class="cola get green">
-              <p class="name">Green_Cola</p>
-              <p class="count">2</p>
-            </div>
-            <div class="cola get orange">
-              <p class="name">Orange_Cola</p>
-              <p class="count">1</p>
-            </div>
-            <div class="cola get violet">
-              <p class="name">Violet_Cola</p>
-              <p class="count">5</p>
-            </div>
-          </div>
-          <p class="total">총 금액 : 9,000원</p>
+        <button class="btn-get grid-f">획득</button>
+      </div>
+    </section>
+    <section class="right-wrapper">
+      <div class="wallet">
+        <h2 class="a11y-hidden">소지금</h2>
+        <div class="money-box large">
+          <p>소지금 :</p>
+          <p><strong>25,000원</strong></p>
         </div>
-      </section>
-    </div>
-  </body>
+      </div>
+      <div class="cola-list">
+        <h3>획득한 음료</h3>
+        <div class="cola-get large">
+          <div class="cola get original">
+            <p class="name">Original_Cola</p>
+            <p class="count">1</p>
+          </div>
+          <div class="cola get green">
+            <p class="name">Green_Cola</p>
+            <p class="count">2</p>
+          </div>
+          <div class="cola get orange">
+            <p class="name">Orange_Cola</p>
+            <p class="count">1</p>
+          </div>
+          <div class="cola get violet">
+            <p class="name">Violet_Cola</p>
+            <p class="count">5</p>
+          </div>
+        </div>
+        <p class="total">총 금액 : 9,000원</p>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
